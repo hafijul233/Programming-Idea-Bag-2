@@ -338,7 +338,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label13);
             this.Name = "_01DistanceCalculatorApp";
-            this.Text = "_01DistanceCalculatorApp";
+            this.Text = "Distance Calculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._01DistanceCalculatorApp_FormClosing);
             this.Load += new System.EventHandler(this._01DistanceCalculatorApp_Load);
             this.groupBox3.ResumeLayout(false);
