@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _IdeaBagApp
+namespace _IdeaBagApp.Categories
 {
-    public partial class Main : Form
+    public partial class Other : Form
     {
-        public Main()
+        public Other()
         {
             InitializeComponent();
         }

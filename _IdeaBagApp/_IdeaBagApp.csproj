@@ -69,6 +69,12 @@
     <Compile Include="Categories\Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Categories\Hardware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\Hardware.Designer.cs">
+      <DependentUpon>Hardware.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categories\Multimedia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Categories\Number.Designer.cs">
       <DependentUpon>Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\Other.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories\Other.Designer.cs">
+      <DependentUpon>Other.cs</DependentUpon>
     </Compile>
     <Compile Include="Categories\Text.cs">
       <SubType>Form</SubType>
@@ -105,11 +117,11 @@
     <Compile Include="Categories\Web.Designer.cs">
       <DependentUpon>Web.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Number\01DistanceCalculatorApp.cs">
       <SubType>Form</SubType>
@@ -119,8 +131,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="StartPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPageForm.Designer.cs">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Number\01DistanceCalculatorApp.resx">
       <DependentUpon>01DistanceCalculatorApp.cs</DependentUpon>
@@ -134,6 +152,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StartPageForm.resx">
+      <DependentUpon>StartPageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,13 +173,24 @@
     <Folder Include="EnterpriseApp\" />
     <Folder Include="Files\" />
     <Folder Include="Game\" />
+    <Folder Include="Hardware\" />
     <Folder Include="Multimedia\" />
     <Folder Include="Networking\" />
+    <Folder Include="Others\" />
     <Folder Include="Text\" />
     <Folder Include="Threading\" />
     <Folder Include="Web\" />
     <Folder Include="_Resource\icon\" />
     <Folder Include="_Resource\layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{14ffedcf-6c14-47c3-a728-b309dc916d4b}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Resource\logo\numberLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,12 +17,12 @@ namespace _IdeaBagApp
         {
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
-                
+              
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new _01DistanceCalculatorApp());
+            Application.Run(new StartPageForm());
         }
-
+        
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
     }
