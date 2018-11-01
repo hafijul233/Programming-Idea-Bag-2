@@ -29,40 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartPageForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.startingProgressBar = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(59, 68);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.label1.Location = new System.Drawing.Point(77, 242);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(505, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "Programming Idea Bag";
             this.label1.UseWaitCursor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(229, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Loading ....";
-            this.label2.UseWaitCursor = true;
-            // 
             // startingProgressBar
             // 
-            this.startingProgressBar.Location = new System.Drawing.Point(91, 284);
+            this.startingProgressBar.Location = new System.Drawing.Point(82, 341);
             this.startingProgressBar.Name = "startingProgressBar";
-            this.startingProgressBar.Size = new System.Drawing.Size(500, 7);
+            this.startingProgressBar.Size = new System.Drawing.Size(500, 10);
             this.startingProgressBar.TabIndex = 2;
             this.startingProgressBar.UseWaitCursor = true;
             // 
@@ -71,14 +62,24 @@
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(227, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 167);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // StartPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(664, 436);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.startingProgressBar);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -89,6 +90,7 @@
             this.Text = "StartPageForm";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.StartPageForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,8 +99,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar startingProgressBar;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

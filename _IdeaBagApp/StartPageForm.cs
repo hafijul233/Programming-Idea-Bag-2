@@ -29,7 +29,7 @@ namespace _IdeaBagApp
             if(startingProgressBar.Value == 100)
             {
                 timer1.Stop();
-                MainMenuForm mainMenuForm = new MainMenuForm();
+                MainMenu mainMenuForm = new MainMenu();
                     Hide();
                 mainMenuForm.Show();
             }

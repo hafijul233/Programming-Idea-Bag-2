@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace _IdeaBagApp.Categories
 {
-    public partial class Number : Form
+    public partial class Numbers : Form
     {
-        public Number()
+        public Form RefToMainMenu { get; set; }
+
+        public Numbers()
         {
             InitializeComponent();
+        }
+
+        private void Numbers_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.RefToMainMenu.Show();
         }
     }
 }

@@ -87,11 +87,11 @@
     <Compile Include="Categories\Networking.Designer.cs">
       <DependentUpon>Networking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Categories\Number.cs">
+    <Compile Include="Categories\Numbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Categories\Number.Designer.cs">
-      <DependentUpon>Number.cs</DependentUpon>
+    <Compile Include="Categories\Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
     </Compile>
     <Compile Include="Categories\Other.cs">
       <SubType>Form</SubType>
@@ -117,11 +117,11 @@
     <Compile Include="Categories\Web.Designer.cs">
       <DependentUpon>Web.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuForm.cs">
+    <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenuForm.Designer.cs">
-      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Number\01DistanceCalculatorApp.cs">
       <SubType>Form</SubType>
@@ -137,8 +137,14 @@
     <Compile Include="StartPageForm.Designer.cs">
       <DependentUpon>StartPageForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainMenuForm.resx">
-      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    <EmbeddedResource Include="Categories\Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Number\01DistanceCalculatorApp.resx">
       <DependentUpon>01DistanceCalculatorApp.cs</DependentUpon>
@@ -151,6 +157,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="StartPageForm.resx">
       <DependentUpon>StartPageForm.cs</DependentUpon>
@@ -180,7 +187,6 @@
     <Folder Include="Text\" />
     <Folder Include="Threading\" />
     <Folder Include="Web\" />
-    <Folder Include="_Resource\icon\" />
     <Folder Include="_Resource\layout\" />
   </ItemGroup>
   <ItemGroup>
@@ -190,7 +196,30 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="_Resource\logo\numberLogo.png" />
+    <Content Include="_Resource\AppIcon.ico" />
+    <Content Include="_Resource\AppLogo.png" />
+    <Content Include="_Resource\icon\Database.ico" />
+    <Content Include="_Resource\icon\Enterprise.ico" />
+    <Content Include="_Resource\icon\Files.ico" />
+    <Content Include="_Resource\icon\Game.ico" />
+    <Content Include="_Resource\icon\Hardware.ico" />
+    <Content Include="_Resource\icon\Multimedia.ico" />
+    <Content Include="_Resource\icon\Networking.ico" />
+    <Content Include="_Resource\icon\Others.ico" />
+    <Content Include="_Resource\icon\Text.ico" />
+    <Content Include="_Resource\icon\Theading.ico" />
+    <Content Include="_Resource\logo\Database.png" />
+    <Content Include="_Resource\logo\Enterprise.png" />
+    <Content Include="_Resource\logo\Files.png" />
+    <Content Include="_Resource\logo\Game.png" />
+    <Content Include="_Resource\logo\Hardware.png" />
+    <Content Include="_Resource\logo\Multimedia.png" />
+    <Content Include="_Resource\logo\Networking.png" />
+    <Content Include="_Resource\logo\Numbers.png" />
+    <Content Include="_Resource\logo\Others.png" />
+    <Content Include="_Resource\logo\Text.png" />
+    <Content Include="_Resource\logo\Theading.png" />
+    <Content Include="_Resource\logo\Web.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
