@@ -90,9 +90,9 @@ namespace _IdeaBagApp.Categories
 
                 case "Happy Numbers":
                     {
-                        DistanceCalculator distanceCalculatorApp = new DistanceCalculator();
-                        distanceCalculatorApp.MdiParent = this;
-                        distanceCalculatorApp.Show();
+                        HappyNumber happyNumberApp = new HappyNumber();
+                        happyNumberApp.MdiParent = this;
+                        happyNumberApp.Show();
                         break;
                     }
 
