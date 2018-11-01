@@ -1,6 +1,6 @@
 ﻿namespace _IdeaBagApp.Number
 {
-    partial class _01DistanceCalculatorApp
+    partial class DistanceCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -338,8 +338,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label13);
             this.Name = "_01DistanceCalculatorApp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Distance Calculator";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._01DistanceCalculatorApp_FormClosing);
             this.Load += new System.EventHandler(this._01DistanceCalculatorApp_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

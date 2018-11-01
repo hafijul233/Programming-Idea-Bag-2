@@ -47,25 +47,66 @@
             this.quitToolStripMenuItem});
             this.numbersMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.numbersMenuStrip.Name = "numbersMenuStrip";
-            this.numbersMenuStrip.Size = new System.Drawing.Size(1344, 37);
+            this.numbersMenuStrip.Size = new System.Drawing.Size(1344, 40);
             this.numbersMenuStrip.TabIndex = 0;
             this.numbersMenuStrip.Text = "menuStrip1";
             // 
             // chooseProgramToolStripMenuItem
             // 
             this.chooseProgramToolStripMenuItem.Name = "chooseProgramToolStripMenuItem";
-            this.chooseProgramToolStripMenuItem.Size = new System.Drawing.Size(170, 33);
+            this.chooseProgramToolStripMenuItem.Size = new System.Drawing.Size(170, 36);
             this.chooseProgramToolStripMenuItem.Text = "Choose Program";
             // 
             // toolStripComboBox1
             // 
+            this.toolStripComboBox1.AutoSize = false;
+            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox1.DropDownWidth = 300;
+            this.toolStripComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripComboBox1.Items.AddRange(new object[] {
+            "Alarm Clock",
+            "Basic Calculator",
+            "Change Return",
+            "Circular Primes",
+            "Coin Flip Simulation",
+            "Distance Calculator",
+            "Factorial Finder",
+            "Fibonacci Sequence",
+            "Friday the 13th",
+            "Gravity Simulation",
+            "Gray Code",
+            "Guess the Number",
+            "Happy Numbers",
+            "Houseold budget",
+            "Latin Squares",
+            "Least /greatest Common Denominator",
+            "Lotto",
+            "Mortgage Calculator",
+            "Neon Number",
+            "Next Prime Number",
+            "Nth Natural Number",
+            "Number Base Converter",
+            "Number of Days",
+            "Pascal\'s Triangle",
+            "Pi Nth Digit",
+            "prime Factorization",
+            "Pseudo Random Number Generator",
+            "r to Nth Digit",
+            "Ramanujan Number",
+            "Roman Number Generator",
+            "Roman to Arabic Converter",
+            "Tax Calculator",
+            "Unit Converter",
+            "UUID",
+            "Vigentere Cipher"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 33);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(400, 36);
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(62, 33);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(62, 36);
             this.quitToolStripMenuItem.Text = "Quit";
             // 
             // Numbers

@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialFinder", "FactorialFinder\FactorialFinder.csproj", "{51027672-2075-4647-9B86-056E11173B01}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyNumbers", "HappyNumbers\HappyNumbers.csproj", "{8F714C56-1C6F-4AE2-85D0-A7117D713247}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalculator", "TaxCalculator\TaxCalculator.csproj", "{A49F4443-07F9-4830-BF0A-43F7D869BE5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinFlipSimulation", "CoinFlipSimulation\CoinFlipSimulation.csproj", "{BA82D7B2-35D6-4F81-B5D9-39F9FB3BF736}"
 EndProject
@@ -37,18 +33,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51027672-2075-4647-9B86-056E11173B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51027672-2075-4647-9B86-056E11173B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51027672-2075-4647-9B86-056E11173B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51027672-2075-4647-9B86-056E11173B01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F714C56-1C6F-4AE2-85D0-A7117D713247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F714C56-1C6F-4AE2-85D0-A7117D713247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F714C56-1C6F-4AE2-85D0-A7117D713247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F714C56-1C6F-4AE2-85D0-A7117D713247}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A49F4443-07F9-4830-BF0A-43F7D869BE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A49F4443-07F9-4830-BF0A-43F7D869BE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A49F4443-07F9-4830-BF0A-43F7D869BE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A49F4443-07F9-4830-BF0A-43F7D869BE5E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BA82D7B2-35D6-4F81-B5D9-39F9FB3BF736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA82D7B2-35D6-4F81-B5D9-39F9FB3BF736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA82D7B2-35D6-4F81-B5D9-39F9FB3BF736}.Release|Any CPU.ActiveCfg = Release|Any CPU

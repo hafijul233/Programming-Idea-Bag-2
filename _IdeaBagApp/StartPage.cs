@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace _IdeaBagApp
 {
-    public partial class StartPageForm : Form
+    public partial class StartPage : Form
     {
-        public StartPageForm()
+        public StartPage()
         {
             InitializeComponent();
         }

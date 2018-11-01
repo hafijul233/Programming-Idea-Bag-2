@@ -123,19 +123,37 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Number\01DistanceCalculatorApp.cs">
+    <Compile Include="Number\DistanceCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Number\01DistanceCalculatorApp.Designer.cs">
-      <DependentUpon>01DistanceCalculatorApp.cs</DependentUpon>
+    <Compile Include="Number\DistanceCalculator.Designer.cs">
+      <DependentUpon>DistanceCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number\FactorialFinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number\FactorialFinder.Designer.cs">
+      <DependentUpon>FactorialFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number\HappyNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number\HappyNumber.Designer.cs">
+      <DependentUpon>HappyNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number\TaxCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number\TaxCalculator.Designer.cs">
+      <DependentUpon>TaxCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartPageForm.cs">
+    <Compile Include="StartPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartPageForm.Designer.cs">
-      <DependentUpon>StartPageForm.cs</DependentUpon>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Categories\Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
@@ -146,8 +164,14 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Number\01DistanceCalculatorApp.resx">
-      <DependentUpon>01DistanceCalculatorApp.cs</DependentUpon>
+    <EmbeddedResource Include="Number\DistanceCalculator.resx">
+      <DependentUpon>DistanceCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number\FactorialFinder.resx">
+      <DependentUpon>FactorialFinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number\HappyNumber.resx">
+      <DependentUpon>HappyNumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,8 +183,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StartPageForm.resx">
-      <DependentUpon>StartPageForm.cs</DependentUpon>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

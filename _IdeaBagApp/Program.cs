@@ -20,7 +20,7 @@ namespace _IdeaBagApp
               
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartPageForm());
+            Application.Run(new StartPage());
         }
         
         [System.Runtime.InteropServices.DllImport("user32.dll")]

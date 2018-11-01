@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace _IdeaBagApp.Number
 {
-    public partial class _01DistanceCalculatorApp : Form
+    public partial class DistanceCalculator : Form
     {
         private const string _programTitle = "Distance Calculator";
         private const double _earthRadius = 6371137.00;
 
-        public _01DistanceCalculatorApp()
+        public DistanceCalculator()
         {
             InitializeComponent();
         }
@@ -157,21 +157,6 @@ namespace _IdeaBagApp.Number
             MeterTextBox.Text = String.Empty;
             NautilesMilesTextBox.Text = String.Empty;
             MilesTextBox.Text = String.Empty;
-        }
-
-        private void _01DistanceCalculatorApp_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            var dialogResult = MessageBox.Show("Are you Really Want to Quit.", _programTitle,
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                e.Cancel = true;
-            }
         }
     }
 }
