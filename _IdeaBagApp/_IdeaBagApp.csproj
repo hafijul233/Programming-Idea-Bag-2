@@ -123,6 +123,18 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Number\ChangeReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number\ChangeReturn.Designer.cs">
+      <DependentUpon>ChangeReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number\CoinToser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number\CoinToser.Designer.cs">
+      <DependentUpon>CoinToser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Number\DistanceCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +175,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number\ChangeReturn.resx">
+      <DependentUpon>ChangeReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number\CoinToser.resx">
+      <DependentUpon>CoinToser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Number\DistanceCalculator.resx">
       <DependentUpon>DistanceCalculator.cs</DependentUpon>
@@ -219,8 +237,14 @@
       <Project>{14ffedcf-6c14-47c3-a728-b309dc916d4b}</Project>
       <Name>Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\_Controllers\_Controllers.csproj">
+      <Project>{558A0E1E-5B70-4FED-8E89-6C51434969BD}</Project>
+      <Name>_Controllers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Manus.png" />
+    <None Include="Resources\Shapla.png" />
     <Content Include="_Resource\AppIcon.ico" />
     <Content Include="_Resource\AppLogo.png" />
     <Content Include="_Resource\icon\Database.ico" />

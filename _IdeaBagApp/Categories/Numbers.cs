@@ -96,23 +96,23 @@ namespace _IdeaBagApp.Categories
                         break;
                     }
 
-               /*case 5:
+               case "Coin Flip Simulation":
                     {
-                        DistanceCalculator distanceCalculatorApp = new DistanceCalculator();
-                        distanceCalculatorApp.MdiParent = this;
-                        distanceCalculatorApp.Show();
+                        CoinToser coinToserApp = new CoinToser();
+                        coinToserApp.MdiParent = this;
+                        coinToserApp.Show();
                         break;
                     }
 
-                case 6:
+               case "Change Return":
                     {
-                        DistanceCalculator distanceCalculatorApp = new DistanceCalculator();
-                        distanceCalculatorApp.MdiParent = this;
-                        distanceCalculatorApp.Show();
+                        ChangeReturn changeReturnApp = new ChangeReturn();
+                        changeReturnApp.MdiParent = this;
+                        changeReturnApp.Show();
                         break;
                     }
 
-                case 7:
+                /*case 7:
                     {
                         DistanceCalculator distanceCalculatorApp = new DistanceCalculator();
                         distanceCalculatorApp.MdiParent = this;
