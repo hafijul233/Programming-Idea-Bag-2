@@ -44,5 +44,15 @@
     <Compile Include="ChangeReturnController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\_Models\_Models.csproj">
+      <Project>{BEFF000A-BD60-4F0A-9ED2-FFB8FDE001DA}</Project>
+      <Name>_Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_Repository\_Repository.csproj">
+      <Project>{6FD3B81A-78FE-48DD-ABD6-645D6EF6B849}</Project>
+      <Name>_Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
