@@ -40,11 +40,13 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.EntryProductlistView = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.AddButton = new System.Windows.Forms.Button();
             this.QtyTextBox = new System.Windows.Forms.TextBox();
             this.ItemsListComboBox = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -84,10 +86,8 @@
             this.taxLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Return_1Label = new System.Windows.Forms.Label();
-            this.PaymentButton = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ReceiveTextBox = new System.Windows.Forms.TextBox();
+            this.PaymentButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -250,6 +250,10 @@
             // 
             this.columnHeader1.Text = "SI";
             // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "ID";
+            // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Description";
@@ -282,6 +286,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(991, 55);
             this.panel4.TabIndex = 3;
+            // 
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.AddButton.Location = new System.Drawing.Point(809, 8);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(146, 40);
+            this.AddButton.TabIndex = 3;
+            this.AddButton.Text = "ADD";
+            this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // QtyTextBox
             // 
@@ -831,6 +846,16 @@
             this.Return_1Label.Text = "0";
             this.Return_1Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // ReceiveTextBox
+            // 
+            this.ReceiveTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReceiveTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReceiveTextBox.Location = new System.Drawing.Point(193, 99);
+            this.ReceiveTextBox.Name = "ReceiveTextBox";
+            this.ReceiveTextBox.Size = new System.Drawing.Size(142, 35);
+            this.ReceiveTextBox.TabIndex = 26;
+            this.ReceiveTextBox.TextChanged += new System.EventHandler(this.ReceiveTextBox_TextChanged);
+            // 
             // PaymentButton
             // 
             this.PaymentButton.BackColor = System.Drawing.SystemColors.Highlight;
@@ -844,31 +869,6 @@
             this.PaymentButton.TabIndex = 3;
             this.PaymentButton.Text = "Payment";
             this.PaymentButton.UseVisualStyleBackColor = false;
-            // 
-            // AddButton
-            // 
-            this.AddButton.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.AddButton.Location = new System.Drawing.Point(809, 8);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(146, 40);
-            this.AddButton.TabIndex = 3;
-            this.AddButton.Text = "ADD";
-            this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "ID";
-            // 
-            // ReceiveTextBox
-            // 
-            this.ReceiveTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReceiveTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiveTextBox.Location = new System.Drawing.Point(193, 99);
-            this.ReceiveTextBox.Name = "ReceiveTextBox";
-            this.ReceiveTextBox.Size = new System.Drawing.Size(142, 35);
-            this.ReceiveTextBox.TabIndex = 26;
-            this.ReceiveTextBox.TextChanged += new System.EventHandler(this.ReceiveTextBox_TextChanged);
             // 
             // ChangeReturn
             // 

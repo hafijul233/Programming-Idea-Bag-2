@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IdeaBagApp.Properties
+namespace _IdeaBagApp.Properties
 {
 
 
