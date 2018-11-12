@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Controllers", "_Controller
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeaBagApp", "IdeaBagApp\IdeaBagApp.csproj", "{C802524D-25A6-4C8C-97FA-743704B93469}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers.DistanceCalculator", "Numbers.DistanceCalculator\Numbers.DistanceCalculator.csproj", "{798EDC88-4FB1-45D2-8D2C-250B48A8123E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798EDC88-4FB1-45D2-8D2C-250B48A8123E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798EDC88-4FB1-45D2-8D2C-250B48A8123E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798EDC88-4FB1-45D2-8D2C-250B48A8123E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798EDC88-4FB1-45D2-8D2C-250B48A8123E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
