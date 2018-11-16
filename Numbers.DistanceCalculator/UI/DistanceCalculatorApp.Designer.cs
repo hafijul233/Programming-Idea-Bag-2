@@ -539,6 +539,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DistanceCalculator";
             this.Text = "Distance Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DistanceCalculator_FormClosing);
             this.Load += new System.EventHandler(this.DistanceCalculator_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

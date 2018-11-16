@@ -241,6 +241,26 @@ namespace Numbers.DistanceCalculator
                 EndCountryComboBox.Items.Add(country);
             }
         }
+
+        private void DistanceCalculator_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                dynamic dialogResult = MessageBox.Show("Are you Really Want to Exit", Properties.Resources.programTitle,
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    e.Cancel = false;
+                    Application.Exit();
+
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
     }
 }
 
