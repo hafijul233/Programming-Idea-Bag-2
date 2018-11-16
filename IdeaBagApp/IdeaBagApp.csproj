@@ -219,35 +219,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
-    <Folder Include="EnterpriseApp\" />
-    <Folder Include="Files\" />
-    <Folder Include="Game\" />
-    <Folder Include="Hardware\" />
-    <Folder Include="Multimedia\" />
     <Folder Include="Networking\" />
-    <Folder Include="Others\" />
-    <Folder Include="Text\" />
-    <Folder Include="Threading\" />
-    <Folder Include="Web\" />
     <Folder Include="_Resource\layout\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{14ffedcf-6c14-47c3-a728-b309dc916d4b}</Project>
       <Name>Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\_Controllers\_Controllers.csproj">
-      <Project>{558A0E1E-5B70-4FED-8E89-6C51434969BD}</Project>
-      <Name>_Controllers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\_Models\_Models.csproj">
-      <Project>{BEFF000A-BD60-4F0A-9ED2-FFB8FDE001DA}</Project>
-      <Name>_Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\_Repository\_Repository.csproj">
-      <Project>{6FD3B81A-78FE-48DD-ABD6-645D6EF6B849}</Project>
-      <Name>_Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

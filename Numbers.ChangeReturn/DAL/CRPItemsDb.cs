@@ -1,11 +1,11 @@
-﻿using _Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Numbers.ChangeReturn.Models;
 
-namespace _Repository
+namespace Numbers.ChangeReturn.DAL
 {
     public class CrpItemsDb
     {

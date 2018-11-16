@@ -4,9 +4,9 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using _Repository;
+using Numbers.ChangeReturn.DAL;
 
-namespace _Controllers
+namespace Numbers.ChangeReturn.BLL
 {
     public class ChangeReturnController
     {
