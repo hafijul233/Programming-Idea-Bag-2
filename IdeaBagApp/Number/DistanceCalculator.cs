@@ -22,30 +22,12 @@ namespace _IdeaBagApp.Number
 
         private void StringValidation(string value)
         {
-            foreach (char c in value)
-            {
-                if (Char.IsDigit(c) == false && c != '.')
-                {
-                    MessageBox.Show("Only Numbers and (.) are Allowed.", _programTitle);
-                }
-            }
+            
         }
 
         private void _01DistanceCalculatorApp_Load(object sender, EventArgs e)
         {
-            //Input Fields Empty
-            StartLatitudeTextBox.Text = "0";
-            StartLongitudeTextBox.Text = "0";
-
-            EndLatitudeTextBox.Text = "0";
-            EndLongitudeTextBox.Text = "0";
-
-            //Result Fields Empty
-
-            KilometerTextBox.Text = String.Empty;
-            MeterTextBox.Text = String.Empty;
-            NautilesMilesTextBox.Text = String.Empty;
-            MilesTextBox.Text = String.Empty;
+            
         }
 
         private void StartLatitudeTextBox_TextChanged(object sender, EventArgs e)
