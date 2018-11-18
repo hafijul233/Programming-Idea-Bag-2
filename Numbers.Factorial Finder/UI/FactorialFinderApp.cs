@@ -28,7 +28,7 @@ namespace Numbers.Factorial_Finder
         {
             string result = fFController.StringValidation(InputNumberTextBox.Text);
 
-            if (result != "")
+            if (result != "NULL")
             {
                 OutputFactorialTextBox.Text = result;
             }
