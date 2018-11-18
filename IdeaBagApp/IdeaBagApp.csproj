@@ -219,7 +219,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Networking\" />
     <Folder Include="_Resource\layout\" />
   </ItemGroup>
   <ItemGroup>

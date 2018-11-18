@@ -59,30 +59,7 @@ namespace _IdeaBagApp.Number
 
         private void FactorialButton_Click(object sender, EventArgs e)
         {
-            if (InputNumberTextBox.Text == String.Empty)
-            {
-                OutputTextBox.Text = "Input Field is Empty.";
-            }
-
-            else if (InputNumberTextBox.Text == "0")
-            {
-                OutputTextBox.Text = "0 Cannot be Factorized.";
-            }
-
-            else
-            {
-                decimal inputNumber = Convert.ToDecimal(InputNumberTextBox.Text);
-
-                decimal resultNumber = 1;
-
-                while (inputNumber >= 1)
-                {
-                    resultNumber = resultNumber * (inputNumber);
-                    inputNumber = inputNumber - 1;
-                }
-
-                OutputTextBox.Text = Convert.ToString(resultNumber);
-            }
+           
         }
     }
 }

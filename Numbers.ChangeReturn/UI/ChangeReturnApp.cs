@@ -14,11 +14,14 @@ namespace Numbers.ChangeReturn.UI
 {
     public partial class ChangeReturnApp : Form
     {
-        public ChangeReturnController _crpController = new ChangeReturnController();
 
-        public List<CRPItem> _StockItemList = new List<CRPItem>();
+        private DateTime _currentTime;
 
-        public List<CRPItem> _SellingItemList = new List<CRPItem>();
+        protected ChangeReturnController _crpController = new ChangeReturnController();
+
+        private List<CRPItem> _StockItemList = new List<CRPItem>();
+
+        private List<CRPItem> _SellingItemList = new List<CRPItem>();
 
         private double _totalPrize;
 
@@ -27,6 +30,8 @@ namespace Numbers.ChangeReturn.UI
         public ChangeReturnApp()
         {
             InitializeComponent();
+            timer1.Start();
+
         }
 
         private void ChangeReturnApp_Load(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace Numbers.ChangeReturn.UI
             {
                 _StockItemList.Add(item);
             }
+
         }
 
         private void customerNameTextBox_TextChanged(object sender, EventArgs e)
@@ -50,9 +56,9 @@ namespace Numbers.ChangeReturn.UI
 
                 foreach (char c in temp)
                 {
-                    if (Char.IsLetter(c) == false)
+                    if (Char.IsLetter(c) == false && c != ' ')
                     {
-                        MessageBox.Show("Only Alphabet Are Allowed.");
+                        MessageBox.Show("Only Alphabet Are Allowed.", Properties.Resources.programTitle);
                     }
                 }
             }
@@ -68,7 +74,7 @@ namespace Numbers.ChangeReturn.UI
                 {
                     if (Char.IsDigit(c) == false)
                     {
-                        MessageBox.Show("Only Numbers Are Allowed.");
+                        MessageBox.Show("Only Numbers Are Allowed.", Properties.Resources.programTitle);
                     }
                 }
             }
@@ -117,31 +123,103 @@ namespace Numbers.ChangeReturn.UI
 
             _taxPrize = (_totalPrize / 100) * 15.025;
 
-            totalPrizeLabel.Text = String.Format("{0:F2}", _totalPrize);
-            taxLabel.Text = String.Format("{0:F2}", _taxPrize);
+            totalPrizeLabel.Text = String.Format("{0:N2}", _totalPrize);
+            taxLabel.Text = String.Format("{0:N2}", _taxPrize);
 
             _totalPrize += _taxPrize;
-            totalPaymentLabel.Text = String.Format("{0:F2}", _totalPrize);
+            totalPaymentLabel.Text = String.Format("{0:N2}", _totalPrize);
         }
 
         private void ReceiveTextBox_TextChanged(object sender, EventArgs e)
         {
             if (ReceiveTextBox.Text != String.Empty)
             {
-                double ReceivedPay = Convert.ToDouble(ReceiveTextBox.Text);
-                /*if (ReceivedPay < _totalPrize)
+                string temp = ReceiveTextBox.Text;
+
+                foreach (char c in temp)
                 {
-                    var dialogResult = MessageBox.Show("Payment Is Insuffcient to Recceive.", "Change Return Program",
+                    if (Char.IsLetter(c) == true)
+                    {
+                        MessageBox.Show("Only Numbers and (.) are Allowed", Properties.Resources.programTitle);
+                    }
+                }
+            }   
+        }
+
+        private void ChangeReturnApp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                dynamic dialogResult = MessageBox.Show("Are you Really Want to Exit", Properties.Resources.programTitle,
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    timer1.Stop();
+                    e.Cancel = false;
+                    Application.Exit();
+
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            _currentTime = DateTime.Now;
+
+            CurrentDateTimeLabel.Text = _currentTime.ToString();
+        }
+
+        private void PaymentButton_Click(object sender, EventArgs e)
+        {
+            if (ReceiveTextBox.Text == String.Empty)
+            {
+                MessageBox.Show("Receive Payment Box is Empty", Properties.Resources.programTitle,
+                    MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
+
+            else if (ReceiveTextBox.Text != String.Empty)
+            {
+                double ReceivedPay = Convert.ToDouble(ReceiveTextBox.Text);
+
+                if (ReceivedPay < _totalPrize)
+                {
+                    var dialogResult = MessageBox.Show("Payment Is Insuffcient to Recceive.", Properties.Resources.programTitle,
                         MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                     if (dialogResult == DialogResult.Cancel)
                     {
                         ReceiveTextBox.Text = "";
                     }
                 }
+
                 else
-                {*/
-                    int changeReturn = (int)(ReceivedPay - _totalPrize);
-                    ChangeReturnLabel.Text = String.Format("{0:F2}", changeReturn);
+                {
+                    int changeReturn = (int) (ReceivedPay - _totalPrize);
+                    ChangeReturnLabel.Text = String.Format("{0:N2}", changeReturn);
 
                     Return_1000Label.Text = Convert.ToString(changeReturn / 1000);
                     changeReturn %= 1000;
@@ -169,26 +247,7 @@ namespace Numbers.ChangeReturn.UI
 
                     Return_1Label.Text = Convert.ToString(changeReturn / 1);
                     changeReturn %= 1;
-                //}
-            }
-        }
-
-        private void ChangeReturnApp_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                dynamic dialogResult = MessageBox.Show("Are you Really Want to Exit", Properties.Resources.programTitle,
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (dialogResult == DialogResult.Yes)
-                {
-                    e.Cancel = false;
-                    Application.Exit();
-
-                }
-                else
-                {
-                    e.Cancel = true;
+                    //
                 }
             }
         }

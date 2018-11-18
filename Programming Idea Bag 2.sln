@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{08E5E320-FDB8-45E6-9CD7-ED32141DF0D8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VowelCounter", "VowelCounter\VowelCounter.csproj", "{116C0C76-9F7D-4FB5-B2B8-070BB21A1C36}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeaBagApp", "IdeaBagApp\IdeaBagApp.csproj", "{C802524D-25A6-4C8C-97FA-743704B93469}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers.DistanceCalculator", "Numbers.DistanceCalculator\Numbers.DistanceCalculator.csproj", "{798EDC88-4FB1-45D2-8D2C-250B48A8123E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers.ChangeReturn", "Numbers.ChangeReturn\Numbers.ChangeReturn.csproj", "{8F1B1122-0C73-465B-AA96-480B0923946C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers.Factorial Finder", "Numbers.Factorial Finder\Numbers.Factorial Finder.csproj", "{CC4AD148-8ED4-48B8-B65D-476389196C55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{08E5E320-FDB8-45E6-9CD7-ED32141DF0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08E5E320-FDB8-45E6-9CD7-ED32141DF0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08E5E320-FDB8-45E6-9CD7-ED32141DF0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08E5E320-FDB8-45E6-9CD7-ED32141DF0D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{116C0C76-9F7D-4FB5-B2B8-070BB21A1C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{116C0C76-9F7D-4FB5-B2B8-070BB21A1C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{116C0C76-9F7D-4FB5-B2B8-070BB21A1C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{116C0C76-9F7D-4FB5-B2B8-070BB21A1C36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C802524D-25A6-4C8C-97FA-743704B93469}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +29,10 @@ Global
 		{8F1B1122-0C73-465B-AA96-480B0923946C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F1B1122-0C73-465B-AA96-480B0923946C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F1B1122-0C73-465B-AA96-480B0923946C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4AD148-8ED4-48B8-B65D-476389196C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4AD148-8ED4-48B8-B65D-476389196C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4AD148-8ED4-48B8-B65D-476389196C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4AD148-8ED4-48B8-B65D-476389196C55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
